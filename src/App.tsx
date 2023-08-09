@@ -1,11 +1,13 @@
 import { GlobalStyles } from "./styles/global-styles"
 import { Footer } from "./components/Footer" 
+import { Header } from "./components/Header"
 
 function App() {
   return (
     <>
       <GlobalStyles />
-      <p style={{height:'150vh'}}>Criação TS</p>
+      <Header />
+      <p style={{height:'80vh'}}>Criação TS</p>
       <Footer />
     </>
   )

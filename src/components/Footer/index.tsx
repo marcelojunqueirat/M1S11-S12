@@ -3,7 +3,9 @@ import { FooterStyled } from "./styled"
 function Footer() {
   return (
     <FooterStyled>
-      <div className="footer-border" />
+      <div>
+        <div className="footer-border" />
+      </div>
       <ul>
         <li>Início</li>
         <li>Sobre mim</li>

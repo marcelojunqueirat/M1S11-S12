@@ -7,7 +7,13 @@ export const FooterStyled = styled.footer`
   bottom: 0;
 
   div {
-    width: 90%;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .footer-border {
+    width: 80%;
     border: 1px solid #21262d;
   }
 
@@ -48,6 +54,11 @@ export const FooterStyled = styled.footer`
   @media (max-width: 450px) {
     a {
       font-size: 13px;;
+    }
+
+    li {
+      white-space: nowrap;
+      margin: 0 1em;
     }
   }
 `
