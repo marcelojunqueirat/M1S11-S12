@@ -1,4 +1,5 @@
-import { FooterStyled } from "./styled"
+import { FooterStyled, LinkStyled } from "./styled"
+import { pages } from "../../data/Pages"
 
 function Footer() {
   return (
@@ -7,9 +8,13 @@ function Footer() {
         <div className="footer-border" />
       </div>
       <ul>
-        <li>Início</li>
-        <li>Sobre mim</li>
-        <li>Portfólio</li>
+        {pages.map(({ route, description }) => (
+          <li key={description}>
+            <LinkStyled to={route}>
+              {description}
+            </LinkStyled>
+          </li>
+        ))}
       </ul>
       <a href="#top">© Marcelo Teixeira | Desenvolvedor ⚡</a>
     </FooterStyled>

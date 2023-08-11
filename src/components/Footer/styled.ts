@@ -1,4 +1,5 @@
 import styled from "styled-components"
+import { Link } from "react-router-dom"
 
 export const FooterStyled = styled.footer`
   width: 100%;
@@ -61,4 +62,8 @@ export const FooterStyled = styled.footer`
       margin: 0 1em;
     }
   }
+`
+
+export const LinkStyled = styled(Link)`
+  text-decoration: none;
 `

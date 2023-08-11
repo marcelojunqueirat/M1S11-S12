@@ -1,7 +1,8 @@
 import { useState, useEffect } from "react"
-import { HeaderStyled } from "./styled"
+import { HeaderStyled, LinkStyled } from "./styled"
 import { api } from "../../services/api"
 import { UsersProps } from "../../interfaces/UsersProps"
+import { pages } from "../../data/Pages"
 
 function Header() {
   const [userData, setUserData] = useState<UsersProps>();
@@ -18,14 +19,22 @@ function Header() {
   return (
     <HeaderStyled>
       <div>
-        <img src={userData && userData.avatar_url} alt={`Foto de ${userData && userData.name}`} />
-        <p>{userData && userData.name}</p>
+        <LinkStyled to="/">
+          <img src={userData && userData.avatar_url} alt={`Foto de ${userData && userData.name}`} />
+        </LinkStyled>
+        <LinkStyled to="/">
+          <p>{userData && userData.name}</p>
+        </LinkStyled>
       </div>
       <nav>
         <ul>
-          <li>Início</li>
-          <li>Sobre mim</li>
-          <li>Portfólio</li>
+          {pages.map(({ route, description }) => (
+            <li key={description}>
+              <LinkStyled to={route}>
+                {description}
+              </LinkStyled>
+            </li>
+          ))}
         </ul>
       </nav>
     </HeaderStyled>

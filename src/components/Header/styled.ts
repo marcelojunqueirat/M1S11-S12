@@ -1,4 +1,5 @@
-import {styled } from "styled-components"
+import { styled } from "styled-components"
+import { Link } from "react-router-dom"
 
 export const HeaderStyled = styled.header`
     position: sticky;
@@ -66,4 +67,8 @@ export const HeaderStyled = styled.header`
             display: none;
         }
   }
+`
+
+export const LinkStyled = styled(Link)`
+  text-decoration: none;
 `
