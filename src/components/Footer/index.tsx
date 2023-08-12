@@ -1,5 +1,5 @@
 import { FooterStyled, LinkStyled } from "./styled"
-import { pages } from "../../data/Pages"
+import { pages } from "../../data/pages"
 
 function Footer() {
   return (

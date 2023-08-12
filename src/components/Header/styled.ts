@@ -55,7 +55,7 @@ export const HeaderStyled = styled.header`
         transition: transform 0.8s;;
     }
 
-    @media (max-width: 450px) {
+    @media (max-width: 480px) {
         display: grid;
         grid-template-columns: 1fr 1fr;
 

@@ -52,14 +52,21 @@ export const FooterStyled = styled.footer`
   }
 
 
-  @media (max-width: 450px) {
+  @media (max-width: 480px) {
     a {
       font-size: 13px;;
     }
 
+    ul {
+      display: block;
+    }
+
     li {
       white-space: nowrap;
-      margin: 0 1em;
+    }
+
+    a {
+      margin: 1em 4em;
     }
   }
 `
