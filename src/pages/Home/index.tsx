@@ -1,7 +1,6 @@
 import { Footer } from "../../components/Footer"
 import { Header } from "../../components/Header"
 import { HomeStyled, SectionStyled } from "./styled"
-import { Button } from "../../components/Button"
 
 function Home() {
   return (

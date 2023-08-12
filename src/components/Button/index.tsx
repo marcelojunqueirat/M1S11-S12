@@ -1,9 +1,9 @@
 import { ButtonStyled } from "./styled"
 import { ButtonProps } from "../../interfaces/ButtonProps"
 
-function Button({descriptionButton}: ButtonProps) {
+function Button({descriptionButton, onClick}: ButtonProps) {
   return (
-    <ButtonStyled>
+    <ButtonStyled onClick={onClick}>
       {descriptionButton}
     </ButtonStyled>
   )
